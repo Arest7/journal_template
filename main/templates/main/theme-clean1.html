@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="American International Scientific and Pedagogical Journal" />
+	<meta name="keywords" content="blog, blog, journal, science, article, vlog, vcard" />
+	<meta name="author" content="willy wonka" />
+    <title>American International Scientific and Pedagogical Journal</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="{% static "css/index.css" %}">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+</head>
+<body>
+    {% csrf_token %}
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            Are<span class="color">You?</span> 
+        </div>
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="{% static 'images/willy wonka logo.png' %}" alt="logo">
+            </div>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                <a href="#" data-text="BLOG" id="blog-link" >ARTICLES</a>
+                
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="{% static 'images/willy wonka logo.png' %}" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+            <div class="social-media-links">
+               <a href="#"><img src="{% static 'images/instagram logo.png' %}" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="#"><img src="{% static 'images/facebook logo.png' %}" class="social-media" alt="facebook-logo"></a>
+                <a href="#"><img src="{% static 'images/linkedin logo.png' %}" class="social-media" alt="linkedin-logo"></a>
+                <a href="#"><img src="{% static 'images/twitter logo.png' %}" class="social-media" alt="twitter-logo"></a>
+
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                    <div class="firstline">Are <span class="color">You </span></div>
+                <div class="secondline">
+                 a
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Pedagog?", " Scientist?", " Researcher?" ]'></span>
+            <span class="slash">|</span>
+        </div>
+        <span class="secondline">Join us!</span>
+                    <div class="contact">
+                <a href="Mailto:#"><img src="{% static 'images/mail.png' %}" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
+                <a href="Tel:#"><img src="{% static 'images/call.png' %}" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                    </div>    
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+            <img src="{% static 'images/man.jpg'%}" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+            <div class="color-panel">
+                <img src="{% static 'images/gear.png' %}" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Us</span>
+                    <span class="header-caption">Get to Know <span class="color">us.</span></span>
+                </div>
+                <div class="about-main">
+                    <!-- About Description -->
+                    <div class="about-first-paragraph wow">
+                        <span class="about-first-line">Our journal</span><br>
+                        <span class="about-second-line">is dedicated to the publication of high-quality research in the fields of education, pedagogy, and instructional sciences. Our mission is to promote innovative research and methodologies that contribute to the enhancement of teaching and learning practices around the world.</span><br>
+                        <span class="about-second-line">We aim to bridge the gap between research and practice, encouraging the application of scientific insights in classroom settings and teacher professional development.</span>
+                    </div>
+                    <!-- About Image -->
+                    <div class="about-img">
+                        <img src="{% static 'images/about.jpg' %}" alt="About Us Image">
+                    </div>
+                </div>
+           
+            
+    
+            </div>
+            
+            <!-- Services Header -->
+            <div class="services-heading wow">
+                Our Journal
+            </div>
+            <!-- Services Content -->
+            <div class="services-content">
+                <div class="service-one service wow">
+                    <div class="service-img">
+                        <img src="{% static 'images/icons8-strategy-64.png' %}" alt="Strategy Icon">
+                    </div>
+                    <div class="service-description">
+                        <h2>Explores Topics</h2>
+                        <p>that shape the heart of education, including cutting-edge instructional strategies and the psychology behind learning.</p>
+                    </div>
+                </div>
+                <div class="service-two service wow">
+                    <div class="service-img">
+                        <img src="{% static 'images/icons8-research-64.png' %}" alt="Research Icon">
+                    </div>
+                    <div class="service-description">
+                        <h2>Research and the Realities of the Classroom</h2>
+                        <p>Turning scientific discoveries into practical tools that transform the learning experience.</p>
+                    </div>
+                </div>
+                <div class="service-three service wow">
+                    <div class="service-img">
+                        <img src="{% static 'images/bulb.png' %}" alt="Innovation Icon">
+                    </div>
+                    <div class="service-description">
+                        <h2>With Every Article</h2>
+                        <p>We inspire educators to reimagine teaching, making education not just a profession but a force of lasting change in students’ lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+    </div>
+        <!-- Footer Section -->
+        
+    </div>
+        
+        <!--blog-->
+        
+
+
+        <div class="features">
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <b><u style="color: #910720;">{{ el.articlesnumber }}</u></b><br>
+                    <h6 style="color: #2964a4;"><b>{{ el.title }}</b></h6>
+        
+                    <b><i>{{ el.owner }}</i></b>
+                    <br>
+                    <br>
+                    Published: {{ el.datenow }}
+                    <br>
+                    <!-- Ensure that data attributes are populated correctly -->
+                    <button class="downloadButton" data-filename="{{ el.file_name }}">Download PDF</button>
+                    <button class="viewButton" data-filename="{{ el.file_name }}">View PDF</button>
+                    <button class="viewCertificateButton" data-certificate="{{ el.c_name }}">
+                        View Certificate
+                    </button>
+                </div>
+        
+            {% endfor %}
+        
+            
+    </div>
+    <script>
+        // JavaScript code
+        document.querySelectorAll('.downloadButton, .viewButton, .viewCertificateButton').forEach(function(button) {
+            button.addEventListener('click', function() {
+                var pdfFilename = this.getAttribute('data-filename');
+                var certificateFile = this.getAttribute('data-certificate');
+                var downloadUrl = "/main/media/" + encodeURIComponent(pdfFilename);
+                var certificateUrl = "/main/media/certificates/" + (certificateFile ? encodeURIComponent(certificateFile) : "");
+        
+                console.log("PDF Filename:", pdfFilename);
+                console.log("Certificate Filename:", certificateFile);
+        
+                if (button.classList.contains('downloadButton')) {
+                    // Download PDF
+                    var link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.download = pdfFilename;
+                    link.type = 'application/pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } else if (button.classList.contains('viewButton')) {
+                    // View PDF in the browser
+                    window.open(downloadUrl, '_blank');
+                } else if (button.classList.contains('viewCertificateButton')) {
+                    if (certificateFile) {
+                        // View Certificate in the browser
+                        window.open(certificateUrl, '_blank');
+                    } else {
+                        console.error("Certificate file is not set.");
+                    }
+                }
+            });
+        });
+        
+        
+        </script>
+
+
+       
+</div>
+<!--blog end-->
+        <!--contact-->
+     <div id="contact">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+         <div class="contact-header">Contact <span class="color"> Us</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+        <div class="contact-content">
+            <!--Contact form-->
+             <div class="contact-form">
+                 <div class="form-header">
+                     Message Us
+                 </div>
+                 <form id="myForm" action="#">
+                    <div class="input-line">
+                        <input  id="name" type="text" placeholder="Name" class="input-name">
+                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                    </div>
+                    <input type="text" id="subject" placeholder="subject" class="input-subject">
+                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                    <button type="button" id ="submit" value="send">Submit</button>
+                 </form>
+               
+             </div>
+            <!--Contact form-->
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="{% static '/images/icon-name.png' %}" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Name</h6>
+                        <p>Arlo Brown</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="{% static '/images/icon-location.png' %}" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Location</h6>
+                      <p>New York, USA</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="{% static '/images/icon-phone.png' %}" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Call</h6>
+                      <p>+9865376531</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="{% static '/images/icon-email.png' %}" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>Info@example.com</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+                    <div class="footer">
+                        <div class="footer-text">
+                            <img src="{% static '/images/copyright.png' %}" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                        </div>
+                       </div>
+               <!--copyright-section-->
+     </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/index.js'%}"></script>
+
+
+</body>
+</html>
